@@ -1,3 +1,18 @@
+# MPC Project
+## The Model I use
+
+## Timestep Length and Elapsed Duration (N & dt)
+The N and dt value I used are 10 and 0.1 , it is the suggestion value of Udacity. I also try some other value,for example 20/0.05 ,but these value do not perform well.
+
+## Polynomial Fitting and MPC Preprocessing
+I preprocessed the received values of X and Y before fitting them.Setting the vehicle's position as the origin to fit can reduce the amount of calculation. The preprocessed code is in lines 61-74 of the main function.
+
+## Model Predictive Control with Latency
+At the first time point, we use A0 and delta 0 of the previous time point, and at the later time point, we use the data of the previous time point. In the cost function, besides the factors recommended in the course, the factor of speed is added, which makes the vehicle more controllable when turning.
+
+---
+
+
 # CarND-Controls-MPC
 Self-Driving Car Engineer Nanodegree Program
 
