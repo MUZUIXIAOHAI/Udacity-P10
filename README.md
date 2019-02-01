@@ -1,8 +1,12 @@
 # MPC Project
 ## The Model I use
 
+![model_picture](./picture/Model.png "mdoel")
+
+
 ## Timestep Length and Elapsed Duration (N & dt)
 The N and dt value I used are 10 and 0.1 , it is the suggestion value of Udacity. I also try some other value,for example 20/0.05 ,but these value do not perform well.
+
 
 ## Polynomial Fitting and MPC Preprocessing
 I preprocessed the received values of X and Y before fitting them.Setting the vehicle's position as the origin to fit can reduce the amount of calculation. The preprocessed code is in lines 61-74 of the main function.
