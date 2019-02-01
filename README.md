@@ -6,9 +6,9 @@
 
 ## Timestep Length and Elapsed Duration (N & dt)
 The N and dt value I used are 10 and 0.1 , it is the suggestion value of Udacity. I also try some other value,for example 20/0.05 ,but these value do not perform well.
-### Smaller DT can better predict the path, making the predicted path smoother and more accurate。
-### Larger N increases the number of points that need to be computed, thus increasing computing time and reducing real-time performance, resulting in worse vehicle performance.
-### The time range affects the length of the predicted path. The larger the vehicle speed is, the longer the predicted path is within the same time interval, the smaller the speed is, and the shorter the predicted path is.
+#### Smaller DT can better predict the path, making the predicted path smoother and more accurate。
+#### Larger N increases the number of points that need to be computed, thus increasing computing time and reducing real-time performance, resulting in worse vehicle performance.
+#### The time range affects the length of the predicted path. The larger the vehicle speed is, the longer the predicted path is within the same time interval, the smaller the speed is, and the shorter the predicted path is.
 
 ## Polynomial Fitting and MPC Preprocessing
 I preprocessed the received values of X and Y before fitting them.Setting the vehicle's position as the origin to fit can reduce the amount of calculation. The preprocessed code is in lines 61-74 of the main function.
